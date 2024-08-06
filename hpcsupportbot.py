@@ -22,7 +22,7 @@ def generate_hpc_utility_response(topic, query):
 
 def main():
     parser = argparse.ArgumentParser(description='Generate HPC diagnostic utilities using Azure OpenAI Service')
-    parser.add_argument('topic', type=str, choices=['Infiniband', 'Nvidia GPU', 'AMD GPU', 'Slurm', 'OpenPBS', 'MPI', 'Job Scripts', 'Logs'],
+    parser.add_argument('topic', type=str, choices=['ib', 'gpu', 'slurm', 'openpbs', 'mpi', 'scripts', 'logs', 'vmsku', 'error', 'other'],
                         help='The HPC topic to generate utilities for')
     parser.add_argument('query', type=str, help='The query to generate a response for')
     args = parser.parse_args()
