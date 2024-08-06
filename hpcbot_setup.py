@@ -1,12 +1,19 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.8
 import os
 import subprocess
 import platform
 import shutil
 
+def check_python_version():
+    """Check if the default Python version is 3.8."""
+    if platform.python_version_tuple()[:2] != ('3', '8'):
+        print("Python 3.8 is required.")
+        exit(1)
+
 def check_root():
     """Check if the script is run as root."""
     return os.geteuid() == 0
+
 
 def check_os():
     """Check the OS version and type."""
@@ -15,11 +22,17 @@ def check_os():
             lines = f.readlines()
         os_info = {}
         for line in lines:
-            key, value = line.strip().split('=')
-            os_info[key] = value.strip('"')
-        return os_info['ID'].lower(), os_info['VERSION_ID']
+            line = line.strip()
+            if '=' in line:
+                key, value = line.split('=', 1)  # Split only on the first '='
+                os_info[key] = value.strip('"')
+        return os_info.get('ID', '').lower(), os_info.get('VERSION_ID', '')
     except FileNotFoundError:
-        return None, None
+        print("Error: /etc/os-release file not found.")
+        exit(1)
+    except Exception as e:
+        print(f"Error occurred while reading /etc/os-release: {e}")
+        exit(1)
 
 def execute_commands(commands):
     """Execute a list of shell commands."""
@@ -46,6 +59,8 @@ def copy_to_bin(file_path):
         exit(1)
 
 if __name__ == "__main__":
+    check_python_version()
+
     if not check_root():
         print("This script must be run as root.")
         exit(1)
@@ -57,21 +72,21 @@ if __name__ == "__main__":
             "apt-get install -y python3-pip",
             "pip install openai==0.28"
         ]
-    elif os_type in ["rhel", "centos"]:
+    elif os_type in ["rhel", "centos", "almalinux"]:
         commands = [
-            "yum update -y",
-            "yum install -y python3-pip",
-            "pip3 install openai==0.28"
+            "yum clean all",
+            "yum install -y python38-pip",
+            "pip3.8 install --user openai==0.28"
         ]
     else:
         print(f"Unsupported OS: {os_type}")
         exit(1)
 
     execute_commands(commands)
-    
+
     # Copy the script itself to /usr/local/bin
-    script_path = os.path.abspath(__file__)
+    script_path = os.path.abspath("hpcbot")
     copy_to_bin(script_path)
-    
+
     print("Commands executed successfully.")
     print("You can now run the script by typing 'hpcbot' in the terminal.")

@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.8
 # Path: hpcsupportbot.py
 
 import openai
@@ -30,7 +30,7 @@ def generate_hpc_utility_response(topic, query):
 
 def main():
     parser = argparse.ArgumentParser(description='Generate HPC diagnostic utilities using Azure OpenAI Service')
-    parser.add_argument('topic', type=str, choices=['ib', 'gpu', 'slurm', 'openpbs', 'mpi', 'scripts', 'logs', 'vmsku', 'error', 'other'],
+    parser.add_argument('topic', type=str, choices=['ib', 'gpu', 'slurm', 'openpbs', 'mpi', 'scripts', 'logs', 'vmsku', 'error', 'others', 'linux', 'ai'],
                         help='The HPC topic to generate utilities for')
     parser.add_argument('query', type=str, help='The query to generate a response for')
     args = parser.parse_args()
