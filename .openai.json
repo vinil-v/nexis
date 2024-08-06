@@ -1,0 +1,6 @@
+{
+    "api_base": "https://vinilhackproject.openai.azure.com/",
+    "api_version": "2023-03-15-preview",
+    "api_key": "10e4b0dd49924450b87d56aab5e4fc58",
+    "deployment_name": "gpt-35-turbo"
+}
