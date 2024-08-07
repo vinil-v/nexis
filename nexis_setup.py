@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# nexis_setup.py
+"""
+Nexis is an innovative CLI-based tool designed to address the challenges faced by HPC and AI engineers. 
+By leveraging the power of AI, Nexis transforms the traditional CLI experience into an intelligent and interactive support system that provides real-time assistance to users.
+This script installs the required dependencies and copies the main script to /usr/local/bin so that it can be run from anywhere in the terminal.
+"""
+#Author : Vinil Vadakkepurakkal
+#Date   : 2024-08-07
+
 import os
 import subprocess
 import platform
@@ -12,8 +22,12 @@ def check_root():
 def check_python_version():
     """Check if the default python3 version is 3.8 or higher."""
     try:
-        result = subprocess.run(['python3', '--version'], capture_output=True, text=True)
-        version_str = result.stdout.strip().split()[1]
+        #adjusting for older python versions
+        result = subprocess.run(['python3', '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+        version_str = result.stdout.strip() or result.stderr.strip()
+        version_str = version_str.split()[1]
+        #result = subprocess.run(['python3', '--version'], capture_output=True, text=True)
+        #version_str = result.stdout.strip().split()[1]
         major, minor, _ = version_str.split('.')
         if (int(major), int(minor)) < (3, 8):
             print("Python 3.8 or higher is required.")
