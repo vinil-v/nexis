@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.8
+#!/usr/bin/env python3
 import os
 import subprocess
 import platform
@@ -88,5 +88,5 @@ if __name__ == "__main__":
     script_path = os.path.abspath("hpcbot")
     copy_to_bin(script_path)
 
-    print("Commands executed successfully.")
+    print("Setup completed.")
     print("You can now run the script by typing 'hpcbot' in the terminal.")
