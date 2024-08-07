@@ -23,8 +23,7 @@ Current CLI tools lack dynamic support and interactive features that could enhan
 ### 1. Create Azure OpenAI Service
 Login to the [Azure Portal](https://portal.azure.com/) and create an Azure OpenAI service. 
 
-![Alt text](images/AzureOpenAIService.png)
-
+<img src="https://github.com/vinil-v/nexis/blob/main/images/AzureOpenAIService.png" width="70%" height="70%">
 
 Obtain the Keys and Endpoint from the resource management section. This information is needed to build Nexis.
 
@@ -47,7 +46,7 @@ Login to [Azure AI Studio](https://ai.azure.com/) and deploy a Base model for Ne
 - Select Deploy model → Select model → Select gpt-35-turbo and confirm.
 - Update the deployment name in `openai_config.json` if necessary.
 
-<img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment.png"  width="50%" height="50%">
+<img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment.png">
 
 
 <img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment_final.png"  width="50%" height="50%">
