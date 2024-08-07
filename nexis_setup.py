@@ -96,7 +96,7 @@ if __name__ == "__main__":
     execute_commands(commands)
 
     # Copy the script itself to /usr/local/bin
-    script_path = os.path.abspath("hpcbot")
+    script_path = os.path.abspath("nexis")
     copy_to_bin(script_path)
 
     print("All is well - Setup completed!.")
