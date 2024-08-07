@@ -47,7 +47,8 @@ Login to [Azure AI Studio](https://ai.azure.com/) and deploy a Base model for Ne
 - Update the deployment name in `openai_config.json` if necessary.
 
 ![Alt text](images/model_deployment.png)
-![Alt text](images/model_deployment_final.png  width="50%" height="50%")
+![Alt text](images/model_deployment_final.png)
+<img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment_final.png"  width="60%" height="30%">
 
 ### 4. Install Nexis
 Clone the repository, change the directory, and set up Nexis:
