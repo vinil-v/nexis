@@ -3,7 +3,7 @@
 ## Description
 Nexis is an innovative CLI-based tool designed to address the challenges faced by HPC and AI engineers. By leveraging the power of AI, Nexis transforms the traditional CLI experience into an intelligent and interactive support system.
 
-![Alt text](images/nexis-logo.png)
+<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis-logo.png"  width="50%" height="50%">
 
 Engineers in HPC and AI domains often face difficulties when dealing with:
 - **Troubleshooting**: Identifying and resolving issues can be time-consuming and complex, requiring engineers to sift through extensive logs and documentation.
@@ -24,6 +24,7 @@ Current CLI tools lack dynamic support and interactive features that could enhan
 Login to the [Azure Portal](https://portal.azure.com/) and create an Azure OpenAI service. 
 
 ![Alt text](images/AzureOpenAIService.png)
+
 
 Obtain the Keys and Endpoint from the resource management section. This information is needed to build Nexis.
 
