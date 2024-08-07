@@ -47,7 +47,8 @@ Login to [Azure AI Studio](https://ai.azure.com/) and deploy a Base model for Ne
 - Select Deploy model → Select model → Select gpt-35-turbo and confirm.
 - Update the deployment name in `openai_config.json` if necessary.
 
-![Alt text](images/model_deployment.png)
+<img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment.png"  width="50%" height="50%">
+
 
 <img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment_final.png"  width="50%" height="50%">
 
