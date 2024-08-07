@@ -5,20 +5,24 @@ import platform
 import shutil
 import sys
 
-def check_python_version():
-    """Check if the default Python version is 3.8 or higher."""
-    major, minor, _ = platform.python_version_tuple()
-    if (int(major), int(minor)) < (3, 8):
-        print("Python 3.8 or higher is required.")
-        sys.exit(1)
-
-check_python_version()
-
-
 def check_root():
     """Check if the script is run as root."""
     return os.geteuid() == 0
 
+def check_python_version():
+    """Check if the default python3 version is 3.8 or higher."""
+    try:
+        result = subprocess.run(['python3', '--version'], capture_output=True, text=True)
+        version_str = result.stdout.strip().split()[1]
+        major, minor, _ = version_str.split('.')
+        if (int(major), int(minor)) < (3, 8):
+            print("Python 3.8 or higher is required.")
+            print("Please install Python 3.8 or higher. You can download it from https://www.python.org/downloads/")
+            print("Or, if you have multiple Python versions installed, you can try running this script with `python3.8`.")
+            sys.exit(1)
+    except Exception as e:
+        print(f"An error occurred while checking the python3 version: {e}")
+        sys.exit(1)
 
 def check_os():
     """Check the OS version and type."""
