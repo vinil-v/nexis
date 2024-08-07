@@ -32,11 +32,16 @@ def check_python_version():
         if (int(major), int(minor)) < (3, 8):
             print("Python 3.8 or higher is required.")
             print("Please install Python 3.8 or higher. You can download it from https://www.python.org/downloads/")
-            print("Or, if you have multiple Python versions installed, you can try running this script and hpcbot script with `python3.8`.")
+            print("Or, if you have multiple Python versions installed, you can try running this script and "nexis" script with `python3.8`.")
             sys.exit(1)
     except Exception as e:
         print(f"An error occurred while checking the python3 version: {e}")
         sys.exit(1)
+        
+def get_python_version():
+    """Get the current Python version."""
+    version_info = platform.python_version_tuple()
+    return tuple(map(int, version_info[:3]))
 
 def check_os():
     """Check the OS version and type."""
@@ -87,9 +92,14 @@ if __name__ == "__main__":
     if not check_root():
         print("This script must be run as root.")
         exit(1)
+ #    Main function to execute the script logic.
+    python_version = get_python_version()
 
-    check_python_version()
+    # Check Python version and run the version check function if less than 3.8
+    if python_version < (3, 8):
+        check_python_version()
 
+    # Check the OS and run the appropriate commands
     os_type, os_version = check_os()
     if os_type == "ubuntu":
         commands = [
