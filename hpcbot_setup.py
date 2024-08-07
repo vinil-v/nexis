@@ -3,12 +3,17 @@ import os
 import subprocess
 import platform
 import shutil
+import sys
 
 def check_python_version():
-    """Check if the default Python version is 3.8."""
-    if platform.python_version_tuple()[:2] != ('3', '8'):
-        print("Python 3.8 is required.")
-        exit(1)
+    """Check if the default Python version is 3.8 or higher."""
+    major, minor, _ = platform.python_version_tuple()
+    if (int(major), int(minor)) < (3, 8):
+        print("Python 3.8 or higher is required.")
+        sys.exit(1)
+
+check_python_version()
+
 
 def check_root():
     """Check if the script is run as root."""
@@ -59,11 +64,13 @@ def copy_to_bin(file_path):
         exit(1)
 
 if __name__ == "__main__":
-    check_python_version()
+    
 
     if not check_root():
         print("This script must be run as root.")
         exit(1)
+
+    check_python_version()
 
     os_type, os_version = check_os()
     if os_type == "ubuntu":
