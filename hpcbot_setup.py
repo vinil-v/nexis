@@ -18,7 +18,7 @@ def check_python_version():
         if (int(major), int(minor)) < (3, 8):
             print("Python 3.8 or higher is required.")
             print("Please install Python 3.8 or higher. You can download it from https://www.python.org/downloads/")
-            print("Or, if you have multiple Python versions installed, you can try running this script with `python3.8`.")
+            print("Or, if you have multiple Python versions installed, you can try running this script and hpcbot script with `python3.8`.")
             sys.exit(1)
     except Exception as e:
         print(f"An error occurred while checking the python3 version: {e}")
