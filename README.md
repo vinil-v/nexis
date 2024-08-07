@@ -27,7 +27,7 @@ Login to the [Azure Portal](https://portal.azure.com/) and create an Azure OpenA
 
 Obtain the Keys and Endpoint from the resource management section. This information is needed to build Nexis.
 
-![Alt text](images/enpoints_api.png)
+<img src="https://github.com/vinil-v/nexis/blob/main/images/enpoints_api.png" width="50%" height="50%">
 
 ### 2. Configure `openai_config.json`
 Create an `openai_config.json` file in your home directory with the obtained information:
@@ -47,8 +47,8 @@ Login to [Azure AI Studio](https://ai.azure.com/) and deploy a Base model for Ne
 - Update the deployment name in `openai_config.json` if necessary.
 
 ![Alt text](images/model_deployment.png)
-![Alt text](images/model_deployment_final.png)
-<img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment_final.png"  width="60%" height="30%">
+
+<img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment_final.png"  width="50%" height="50%">
 
 ### 4. Install Nexis
 Clone the repository, change the directory, and set up Nexis:
