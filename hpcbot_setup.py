@@ -99,5 +99,5 @@ if __name__ == "__main__":
     script_path = os.path.abspath("hpcbot")
     copy_to_bin(script_path)
 
-    print("Setup completed.")
-    print("You can now run the script by typing 'hpcbot' in the terminal.")
+    print("All is well - Setup completed!.")
+    print("You can now run the script by typing 'nexis' in the terminal.")
