@@ -1,8 +1,5 @@
 # Nexis – Your Smart CLI Assistant
 
-## Tagline
-**Nexis: Transforming CLI with AI-Driven Intelligence**
-
 ## Description
 Nexis is an innovative CLI-based tool designed to address the challenges faced by HPC and AI engineers. By leveraging the power of AI, Nexis transforms the traditional CLI experience into an intelligent and interactive support system.
 
@@ -27,14 +24,16 @@ Current CLI tools lack dynamic support and interactive features that could enhan
 Login to the [Azure Portal](https://portal.azure.com/) and create an Azure OpenAI service. 
 
 ![Alt text](images/AzureOpenAIService.png)
+
 Obtain the Keys and Endpoint from the resource management section. This information is needed to build Nexis.
+
 ![Alt text](images/enpoints_api.png)
 
 ### 2. Configure `openai_config.json`
 Create an `openai_config.json` file in your home directory with the obtained information:
 ```json
 {
-    "api_base": "https://name.openai.azure.com/",
+    "api_base": "https://nexisproject.openai.azure.com/",
     "api_version": "2023-03-15-preview",
     "api_key": "your-api-key",
     "deployment_name": "gpt-35-turbo"
@@ -48,7 +47,7 @@ Login to [Azure AI Studio](https://ai.azure.com/) and deploy a Base model for Ne
 - Update the deployment name in `openai_config.json` if necessary.
 
 ![Alt text](images/model_deployment.png)
-![Alt text](images/model_deployment_final.png)
+![Alt text](images/model_deployment_final.png  width="50%" height="50%")
 
 ### 4. Install Nexis
 Clone the repository, change the directory, and set up Nexis:
@@ -58,7 +57,7 @@ cd nexis/
 chmod +x setup_nexis.py
 ./setup_nexis.py
 ```
-Note: In RHEL-based systems like AlmaLinux, ensure the shebang (`#!/usr/bin/env python3`) in both `nexis` and `setup_nexis.py` scripts points to Python 3.8. Additionally, run `pip3.8 install --user openai==0.28` if needed.
+Note: In RHEL-based systems like AlmaLinux, ensure the shebang (`#!/usr/bin/env python3.8`) in both `nexis` and `setup_nexis.py` scripts points to Python 3.8. Additionally, run `pip3.8 install --user openai==0.28` if needed.
 
 ### 5. Run Nexis
 Ensure the `openai_config.json` file is in the home directory. Run Nexis using the following command:
