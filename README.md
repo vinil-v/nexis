@@ -1,7 +1,7 @@
 # Nexis – Your Smart CLI Assistant
 
 ## Description
-Nexis is an innovative CLI-based tool designed to address the challenges faced by HPC and AI engineers. By leveraging the power of AI, Nexis transforms the traditional CLI experience into an intelligent and interactive support system.
+Nexis combines "next" and "axis," signifying a central point for future coding solutions. It is a state-of-the-art command-line interface (CLI) tool designed to transform how high-performance computing (HPC) and artificial intelligence (AI) engineers interact with their systems. By incorporating advanced AI capabilities into the traditional CLI environment, Nexis revolutionizes troubleshooting, coding, and information retrieval, offering a more intelligent, interactive, and efficient approach.
 
 <img src="https://github.com/vinil-v/nexis/blob/main/images/nexis-logo.png"  width="50%" height="50%">
 
