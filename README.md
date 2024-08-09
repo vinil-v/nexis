@@ -1,9 +1,11 @@
 # Nexis – Your Smart CLI Assistant
 
+<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis-logo.png"  width="50%" height="50%">
+
 ## Description
 Nexis, a blend of "next" and "axis," signifies an intelligent assistant for future coding solutions, transforming the interaction between high-performance computing (HPC) and artificial intelligence (AI) engineers and their systems. This advanced command-line interface (CLI) tool integrates AI capabilities into the traditional CLI environment, revolutionizing troubleshooting, coding, and information retrieval for a smarter, more interactive, and efficient process.
 
-<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis-logo.png"  width="50%" height="50%">
+<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis_simulation.gif" >
 
 ## Pre-requisites
 1. Python 3.8 or higher
