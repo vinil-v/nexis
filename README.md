@@ -49,8 +49,8 @@ Clone the repository, change the directory, and set up Nexis:
 ```bash
 git clone https://github.com/vinil-v/nexis.git
 cd nexis/
-chmod +x setup_nexis.py
-./setup_nexis.py
+sudo chmod +x setup_nexis.py
+sudo ./setup_nexis.py
 ```
 Note: In RHEL-based systems like AlmaLinux, ensure the shebang (`#!/usr/bin/env python3.8`) in both `nexis` and `setup_nexis.py` scripts points to Python 3.8. Additionally, run `pip3.8 install --user openai==0.28` if needed.
 

@@ -90,7 +90,7 @@ if __name__ == "__main__":
     
 
     if not check_root():
-        print("This script must be run as root.")
+        print("This script must be run with root privileges.")
         exit(1)
  #    Main function to execute the script logic.
     python_version = get_python_version()
@@ -103,15 +103,15 @@ if __name__ == "__main__":
     os_type, os_version = check_os()
     if os_type == "ubuntu":
         commands = [
-            "apt-get update",
-            "apt-get install -y python3-pip",
-            "pip install openai==0.28"
+            "sudo apt-get update",
+            "sudo apt-get install -y python3-pip",
+            "sudo pip install openai==0.28"
         ]
     elif os_type in ["rhel", "centos", "almalinux"]:
         commands = [
-            "yum clean all",
-            "yum install -y python38-pip",
-            "pip3.8 install --user openai==0.28"
+            "sudo yum clean all",
+            "sudo yum install -y python38-pip",
+            "sudo pip3.8 install --user openai==0.28"
         ]
     else:
         print(f"Unsupported OS: {os_type}")
