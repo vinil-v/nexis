@@ -1,4 +1,4 @@
-# Nexis – Your Smart CLI Assistant
+# Nexis – Revolutionizing the Command Line with Smart AI Assistance
 
 <img src="https://github.com/vinil-v/nexis/blob/main/images/nexis-logo.png"  width="50%" height="50%">
 
