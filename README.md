@@ -1,6 +1,6 @@
 # Nexis – Revolutionizing the Command Line with Smart AI Assistance
 
-<img src="https://github.com/vinil-v/nexis/blob/main/images/updated-logo.png">
+<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis_updated_logo.png" width="70%" height="70%">
 
 ## Description
 Introducing **Nexis**: a fusion of "next" and "axis," representing the future of intelligent coding solutions. Nexis transforms the way developers and engineers interact with their systems through the command line interface. This advanced command-line interface (CLI) tool seamlessly integrates AI capabilities into the traditional CLI environment, revolutionizing troubleshooting, coding, and information retrieval for a smarter, more interactive, and efficient workflow.
