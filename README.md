@@ -3,7 +3,25 @@
 <img src="https://github.com/vinil-v/nexis/blob/main/images/nexis-logo.png"  width="50%" height="50%">
 
 ## Description
-Nexis, a blend of "next" and "axis," signifies an intelligent assistant for future coding solutions, transforming the interaction between high-performance computing (HPC) and artificial intelligence (AI) engineers and their systems. This advanced command-line interface (CLI) tool integrates AI capabilities into the traditional CLI environment, revolutionizing troubleshooting, coding, and information retrieval for a smarter, more interactive, and efficient process.
+Introducing **Nexis**: a fusion of "next" and "axis," representing the future of intelligent coding solutions. Nexis transforms the way developers and engineers interact with their systems through the command line interface. This advanced command-line interface (CLI) tool seamlessly integrates AI capabilities into the traditional CLI environment, revolutionizing troubleshooting, coding, and information retrieval for a smarter, more interactive, and efficient workflow.
+
+### Challenges Faced by Engineers and Developers:
+
+**Maintaining Focus:**
+- Traditional web searches require opening multiple tabs and navigating through numerous documents, which is time-consuming and exhausting. This process leads to frustration and focus issues for engineers and developers.
+- With Nexis, you don't have to leave the CLI. You can create scripts, search for information, or debug without switching interfaces, increasing focus and saving time.
+
+**Information Overload:**
+- When searching for topics, errors, or solutions, developers encounter an overwhelming amount of documents on the web. Finding the right information is crucial and should be readily accessible.
+- Nexis addresses this by providing relevant information directly within the CLI, ensuring developers have immediate access to what they need.
+
+**Efficient Information Retrieval:**
+- In today's data-rich environment, extracting specific and relevant information can be extremely challenging.
+- Nexis quickly delivers concise and pertinent information, streamlining the search process for engineers and developers.
+
+**AI-Powered Troubleshooting, Search, and Coding:**
+- Nexis, powered by Azure OpenAI GPT-3.5-turbo, acts as an assistant within your CLI. You can ask questions, search for information, debug issues, and write code without leaving the command line.
+- Traditionally, the CLI was limited to basic bash completion and utilities, but Nexis revolutionizes it by integrating advanced AI capabilities directly into the CLI environment.
 
 <img src="https://github.com/vinil-v/nexis/blob/main/images/nexis_simulation.gif" >
 
