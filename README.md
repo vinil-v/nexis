@@ -23,7 +23,7 @@ Introducing **Nexis**: a fusion of "next" and "axis," representing the future of
 - Nexis, powered by Azure OpenAI GPT-3.5-turbo, acts as an assistant within your CLI. You can ask questions, search for information, debug issues, and write code without leaving the command line.
 - Traditionally, the CLI was limited to basic bash completion and utilities, but Nexis revolutionizes it by integrating advanced AI capabilities directly into the CLI environment.
 
-<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis_simulation.gif" >
+<img src="https://github.com/vinil-v/nexis/blob/main/images/nexis_demo.gif" >
 
 ## Pre-requisites
 1. Python 3.8 or higher
