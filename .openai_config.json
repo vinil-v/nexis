@@ -2,5 +2,5 @@
     "api_base": "END PONT",
     "api_version": "2023-03-15-preview",
     "api_key": "KEY",
-    "deployment_name": "gpt-35-turbo"
+    "deployment_name": "gpt-4"
 }
