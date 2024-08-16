@@ -56,7 +56,7 @@ Create an `openai_config.json` file in your home directory with the obtained inf
 ### 3. Deploy Base Model in Azure AI Studio
 Login to [Azure AI Studio](https://ai.azure.com/) and deploy a Base model for Nexis:
 - Go to the deployment option.
-- Select Deploy model → Select model → Select gpt-35-turbo and confirm.
+- Select Deploy model → Select model → Select gpt-4 and confirm.
 - Update the deployment name in `openai_config.json` if necessary.
 
 <img src="https://github.com/vinil-v/nexis/blob/main/images/model_deployment.png">
