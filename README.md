@@ -139,7 +139,7 @@ You can submit this job to Slurm with the `sbatch` command:
 
 ```bash
 sbatch test_job.sh
-```
+
 
 This script will request two nodes, run a single task on each node, and limit the job's runtime to five minutes. It will print the hostname of the machine it's running on and the list of nodes allocated for the job. Finally, it will run the `hostname` command on each node using `srun`, which distributes the tasks among the allocated nodes.
 
@@ -183,11 +183,12 @@ model.compile(optimizer='adam', loss=loss_fn, metrics=['accuracy'])
 # Train and evaluate the model
 model.fit(train_images, train_labels, epochs=5)
 model.evaluate(test_images,  test_labels, verbose=2)
-```
+
 
 This code will train a simple neural network on the MNIST dataset for 5 epochs. The model structure is quite simple, just a flatten layer to transform the 2D 28x28 pixel image to 1D 784 pixel, a dense layer with 128 neurons and 'relu' activation function, a dropout layer for regularization and a final dense layer with 10 neurons (as there are 10 classes in MNIST).
 
 Please note that you may need to adjust the parameters like number of epochs, layers, neurons in the layer, etc. based on your specific use case to achieve the best performance.
+```
 
 ### Check NVIDIA GPU Usage
 ```bash
